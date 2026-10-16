@@ -4,8 +4,9 @@ form.addEventListener('submit', function(e){
     e.preventDefault()
     const selectedColor = document.getElementById('selected-color').value.slice(1)
     const schemeSelector = document.getElementById('scheme-selector').value
+    const numSelect = document.getElementById('number-select').value
 
-fetch(`https://www.thecolorapi.com/scheme?hex=${selectedColor}&mode=${schemeSelector}&count=5`)
+fetch(`https://www.thecolorapi.com/scheme?hex=${selectedColor}&mode=${schemeSelector}&count=${numSelect}`)
     .then(res => res.json())
     .then(data => {
             let hexHtml = ''

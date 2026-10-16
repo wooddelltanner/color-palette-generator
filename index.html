@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form id="get-color-scheme" class="container flex">
+            <input type="color" id="selected-color"/>
+            <select id="scheme-selector">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button type="submit" id="submit-color-scheme">Get color scheme</button>
+        </form>
+        
+        <main class="flex" id="colors">
+        </main>
+                
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
